@@ -20,9 +20,21 @@ namespace Casino_Ball_Drop_Game
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Label[][] gameBoard = new Label[10][]; 
+        private Grid gameBoardCont = new Grid();
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void initBoard() 
+        {
+            gameBoardCont = new Grid();
+            gameBoardCont.VerticalAlignment = VerticalAlignment.Top;
+            gameBoardCont.HorizontalAlignment = HorizontalAlignment.Left;
+            gameBoardCont.Width = 800;
+            gameBoardCont.Height = 800;
         }
     }
 }
