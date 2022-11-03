@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino_Ball_Drop_Game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ball Drop Game" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="loginBtn" Content="Log In" HorizontalAlignment="Left" Margin="32,77,0,0" VerticalAlignment="Top" Height="28" Width="88"/>
+        <Label x:Name="nameLbl" Content="Player Name: " HorizontalAlignment="Left" Margin="32,137,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="balanceLbl" Content="Player Balance: " HorizontalAlignment="Left" Margin="32,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="wagerTbx" HorizontalAlignment="Left" Margin="52,255,0,0" TextWrapping="Wrap" Text="0" IsReadOnly="True" VerticalAlignment="Top" Width="63"/>
+        <Label x:Name="wagerHeaderLbl" Content="Wager: " HorizontalAlignment="Left" Margin="32,213,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="addValueBtn" Content="+" HorizontalAlignment="Left" Margin="120,254,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="20"/>
+        <Button x:Name="subValueBtn" Content="-" HorizontalAlignment="Left" Margin="35,254,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="20" Width="12"/>
+        <Button x:Name="confirmWagerBtn" Content="Place Wager" HorizontalAlignment="Left" Margin="35,295,0,0" VerticalAlignment="Top" Width="80"/>
+
     </Grid>
 </Window>
