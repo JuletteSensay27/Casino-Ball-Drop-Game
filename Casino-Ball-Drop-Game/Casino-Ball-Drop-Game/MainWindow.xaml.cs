@@ -22,6 +22,7 @@ namespace Casino_Ball_Drop_Game
     {
         private Label[][] gameBoard = new Label[7][]; 
         private Grid gameBoardCont = new Grid();
+        private Button[] gameButton = new Button[5];
 
         public MainWindow()
         {
@@ -43,6 +44,25 @@ namespace Casino_Ball_Drop_Game
             gameBoardCont.Margin = new Thickness(225,45,0,0);
 
             mainGrid.Children.Add(gameBoardCont);
+
+            for (int i = 0; i < gameButton.Length; i++)
+            {
+                Button button = new Button();
+                button.HorizontalAlignment = HorizontalAlignment.Left;
+                button.VerticalAlignment = VerticalAlignment.Top;
+                button.Width = 40;
+                button.Height = 20;
+                button.Margin = new Thickness(h, v, 0, 0);
+                button.Content = "Slot " + (i + 1);
+                button.Click += button_click;
+                button.Name = "button" + (i + 1);
+                gameButton[i] = button;
+                gameBoardCont.Children.Add(gameButton[i]);
+
+                h += 5 + (int)button.Width;
+            }
+            v += 25;
+            h = 5;
 
             for (int i = 0; i < gameBoard.Length; i++)
                 gameBoard[i] = new Label[5];
@@ -66,9 +86,11 @@ namespace Casino_Ball_Drop_Game
                 }
                 h = 5;
                 v += 45;
-            }
-            
+            }                   
+        }
 
+        private void button_click(object sender, RoutedEventArgs e)
+        {
             
         }
     }
