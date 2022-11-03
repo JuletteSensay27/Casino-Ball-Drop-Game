@@ -35,7 +35,6 @@ namespace Casino_Ball_Drop_Game
             int v = 5;
             int h = 5;
             
-
             gameBoardCont = new Grid();
             gameBoardCont.VerticalAlignment = VerticalAlignment.Top;
             gameBoardCont.HorizontalAlignment = HorizontalAlignment.Left;
@@ -87,10 +86,12 @@ namespace Casino_Ball_Drop_Game
                 h = 5;
                 v += 45;
             }                   
-        }
+        }     
 
         private async void button_click(object sender, RoutedEventArgs e)
         {
+            for(int i = 0; i < gameButton.Length; i++)
+                gameButton[i].IsEnabled = false;
 
             Random rnd = new Random();
             int counter = 0;
@@ -156,7 +157,9 @@ namespace Casino_Ball_Drop_Game
 
                         counter++;
                         rowCounter++;
-                    }              
+                        
+                    }
+                    
                     break;
 
                 case " Slot 2":
@@ -216,6 +219,7 @@ namespace Casino_Ball_Drop_Game
                         counter++;
                         rowCounter++;
                     }
+                    
                     break;
                 case " Slot 3":
                     counter = 0;
@@ -273,6 +277,7 @@ namespace Casino_Ball_Drop_Game
                         counter++;
                         rowCounter++;
                     }
+                    
                     break;
                 case " Slot 4":
                     counter = 0;
@@ -331,6 +336,7 @@ namespace Casino_Ball_Drop_Game
                         counter++;
                         rowCounter++;
                     }
+                    
                     break;
                 case " Slot 5":
                     counter = 0;
@@ -390,9 +396,12 @@ namespace Casino_Ball_Drop_Game
                         counter++;
                         rowCounter++;
                     }
+                    
                     break;
 
             }
+
+           
         }
     }
 }
