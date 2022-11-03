@@ -89,9 +89,310 @@ namespace Casino_Ball_Drop_Game
             }                   
         }
 
-        private void button_click(object sender, RoutedEventArgs e)
+        private async void button_click(object sender, RoutedEventArgs e)
         {
-            
+
+            Random rnd = new Random();
+            int counter = 0;
+            int rowCounter = 0;
+            int prevPlace = 0;
+            int newPlace = 0;
+
+            switch (sender.ToString().Split(':')[1]) 
+            {
+                case " Slot 1":
+                    counter = 0;
+                    rowCounter = 0;
+                    prevPlace = 0;
+                    newPlace = 0;
+                    while (counter < gameBoard.Length) 
+                    {
+                        await Task.Delay(500);
+
+                        int x = rnd.Next() % 2;
+
+                        if (counter < 1)
+                        {
+                            gameBoard[rowCounter][0].Background = new SolidColorBrush(Colors.Yellow);
+                            prevPlace = 0;
+                        }
+                        else
+                        {
+                            if (x == 1)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace >= gameBoard[0].Length - 1)
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }                              
+                            }
+                            else if (x == 0)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace == 0)
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }                               
+                            }
+                        }
+
+                        counter++;
+                        rowCounter++;
+                    }              
+                    break;
+
+                case " Slot 2":
+                    counter = 0;
+                    rowCounter = 0;
+                    prevPlace = 0;
+                    newPlace = 0;
+                    while (counter < gameBoard.Length)
+                    {
+                        await Task.Delay(500);
+
+                        int x = rnd.Next() % 2;
+
+                        if (counter < 1)
+                        {
+                            gameBoard[rowCounter][1].Background = new SolidColorBrush(Colors.Yellow);
+                            prevPlace = 1;
+                        }
+                        else
+                        {
+                            if (x == 1)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace >= gameBoard[0].Length - 1)
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                            }
+                            else if (x == 0)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace == 0)
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                            }
+                        }
+
+                        counter++;
+                        rowCounter++;
+                    }
+                    break;
+                case " Slot 3":
+                    counter = 0;
+                    rowCounter = 0;
+                    prevPlace = 0;
+                    newPlace = 0;
+                    while (counter < gameBoard.Length)
+                    {
+                        await Task.Delay(500);
+
+                        int x = rnd.Next() % 2;
+
+                        if (counter < 1)
+                        {
+                            gameBoard[rowCounter][2].Background = new SolidColorBrush(Colors.Yellow);
+                            prevPlace = 2;
+                        }
+                        else
+                        {
+                            if (x == 1)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace >= gameBoard[0].Length - 1)
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                            }
+                            else if (x == 0)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace == 0)
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                            }
+                        }
+                        counter++;
+                        rowCounter++;
+                    }
+                    break;
+                case " Slot 4":
+                    counter = 0;
+                    rowCounter = 0;
+                    prevPlace = 0;
+                    newPlace = 0;
+                    while (counter < gameBoard.Length)
+                    {
+                        await Task.Delay(500);
+
+                        int x = rnd.Next() % 2;
+
+                        if (counter < 1)
+                        {
+                            gameBoard[rowCounter][3].Background = new SolidColorBrush(Colors.Yellow);
+                            prevPlace = 3;
+                        }
+                        else
+                        {
+                            if (x == 1)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace >= gameBoard[0].Length - 1)
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                            }
+                            else if (x == 0)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace == 0)
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                            }
+                        }
+
+                        counter++;
+                        rowCounter++;
+                    }
+                    break;
+                case " Slot 5":
+                    counter = 0;
+                    rowCounter = 0;
+                    prevPlace = 0;
+                    newPlace = 0;
+                    while (counter < gameBoard.Length)
+                    {
+                        await Task.Delay(500);
+
+                        int x = rnd.Next() % 2;
+
+                        if (counter < 1)
+                        {
+                            gameBoard[rowCounter][4].Background = new SolidColorBrush(Colors.Yellow);
+                            prevPlace = 4;
+                        }
+                        else
+                        {
+                            if (x == 1)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace >= gameBoard[0].Length - 1)
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+
+
+                            }
+                            else if (x == 0)
+                            {
+                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+
+                                if (prevPlace == 0)
+                                {
+                                    newPlace = prevPlace + 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                                else
+                                {
+                                    newPlace = prevPlace - 1;
+                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    prevPlace = newPlace;
+                                }
+                            }
+                        }
+                        counter++;
+                        rowCounter++;
+                    }
+                    break;
+
+            }
         }
     }
 }
