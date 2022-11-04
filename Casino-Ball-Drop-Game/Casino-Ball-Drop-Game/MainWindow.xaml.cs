@@ -30,6 +30,60 @@ namespace Casino_Ball_Drop_Game
             initBoard();
         }
 
+        private void showPrizeMessage() 
+        {
+            if (gameBoard[6][0].Content != null) 
+            {
+              var confirm = MessageBox.Show("Winner! Slot 1", "", MessageBoxButton.OK);
+                if (confirm == MessageBoxResult.OK) 
+                {
+                    gameBoard[6][0].Content = null;
+                    for (int i = 0; i < gameButton.Length; i++)
+                        gameButton[i].IsEnabled = true;
+                }
+            }                           
+            else if (gameBoard[6][1].Content != null)
+            {
+                var confirm = MessageBox.Show("Lost! Slot 2", "", MessageBoxButton.OK);
+                if (confirm == MessageBoxResult.OK)
+                {
+                    gameBoard[6][1].Content = null;
+                    for (int i = 0; i < gameButton.Length; i++)
+                        gameButton[i].IsEnabled = true;
+                }
+            }
+            else if (gameBoard[6][2].Content != null)
+            {
+                var confirm = MessageBox.Show("Winner! Slot 3", "", MessageBoxButton.OK);
+                if (confirm == MessageBoxResult.OK)
+                {
+                    gameBoard[6][2].Content = null;
+                    for (int i = 0; i < gameButton.Length; i++)
+                        gameButton[i].IsEnabled = true;
+                }
+            }
+            else if (gameBoard[6][3].Content != null)
+            {
+                var confirm = MessageBox.Show("Lost! Slot 4", "", MessageBoxButton.OK);
+                if (confirm == MessageBoxResult.OK)
+                {
+                    gameBoard[6][3].Content = null;
+                    for (int i = 0; i < gameButton.Length; i++)
+                        gameButton[i].IsEnabled = true;
+                }
+            }
+            else if (gameBoard[6][4].Content != null)
+            {
+                var confirm = MessageBox.Show("Winner! Slot 5", "", MessageBoxButton.OK);
+                if (confirm == MessageBoxResult.OK)
+                {
+                    gameBoard[6][4].Content = null;
+                    for (int i = 0; i < gameButton.Length; i++)
+                        gameButton[i].IsEnabled = true;
+                }
+            }
+        }
+
         private void initBoard() 
         {
             int v = 5;
@@ -578,6 +632,8 @@ namespace Casino_Ball_Drop_Game
                     break;
 
             }
+
+            showPrizeMessage();
 
         }
     }
