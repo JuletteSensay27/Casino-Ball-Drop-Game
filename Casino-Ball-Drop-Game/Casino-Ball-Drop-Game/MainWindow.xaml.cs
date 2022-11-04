@@ -98,6 +98,7 @@ namespace Casino_Ball_Drop_Game
             int rowCounter = 0;
             int prevPlace = 0;
             int newPlace = 0;
+            Ellipse ball = new Ellipse();
 
             switch (sender.ToString().Split(':')[1]) 
             {
@@ -114,42 +115,79 @@ namespace Casino_Ball_Drop_Game
 
                         if (counter < 1)
                         {
-                            gameBoard[rowCounter][0].Background = new SolidColorBrush(Colors.Yellow);
+                            ball.VerticalAlignment = VerticalAlignment.Top;
+                            ball.HorizontalAlignment = HorizontalAlignment.Left;                   
+                            ball.Width = 20;
+                            ball.Height = 20;
+                            ball.Fill = new SolidColorBrush(Colors.Black);
+                            gameBoard[rowCounter][0].Content = ball;
+                            gameBoard[rowCounter][0].VerticalContentAlignment = VerticalAlignment.Center;
+                            gameBoard[rowCounter][0].HorizontalContentAlignment = HorizontalAlignment.Center;
                             prevPlace = 0;
                         }
                         else
                         {
                             if (x == 1)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace >= gameBoard[0].Length - 1)
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }                              
                             }
                             else if (x == 0)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace == 0)
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }                               
                             }
@@ -175,42 +213,77 @@ namespace Casino_Ball_Drop_Game
 
                         if (counter < 1)
                         {
-                            gameBoard[rowCounter][1].Background = new SolidColorBrush(Colors.Yellow);
+                            ball.VerticalAlignment = VerticalAlignment.Top;
+                            ball.HorizontalAlignment = HorizontalAlignment.Left;
+                            ball.Width = 20;
+                            ball.Height = 20;
+                            ball.Fill = new SolidColorBrush(Colors.Black);
+                            gameBoard[rowCounter][1].Content = ball;
+                            gameBoard[rowCounter][1].VerticalContentAlignment = VerticalAlignment.Center;
+                            gameBoard[rowCounter][1].HorizontalContentAlignment = HorizontalAlignment.Center;
                             prevPlace = 1;
                         }
                         else
                         {
                             if (x == 1)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace >= gameBoard[0].Length - 1)
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                             }
                             else if (x == 0)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace == 0)
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                             }
@@ -234,42 +307,77 @@ namespace Casino_Ball_Drop_Game
 
                         if (counter < 1)
                         {
-                            gameBoard[rowCounter][2].Background = new SolidColorBrush(Colors.Yellow);
+                            ball.VerticalAlignment = VerticalAlignment.Top;
+                            ball.HorizontalAlignment = HorizontalAlignment.Left;
+                            ball.Width = 20;
+                            ball.Height = 20;
+                            ball.Fill = new SolidColorBrush(Colors.Black);
+                            gameBoard[rowCounter][2].Content = ball;
+                            gameBoard[rowCounter][2].VerticalContentAlignment = VerticalAlignment.Center;
+                            gameBoard[rowCounter][2].HorizontalContentAlignment = HorizontalAlignment.Center;
                             prevPlace = 2;
                         }
                         else
                         {
                             if (x == 1)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace >= gameBoard[0].Length - 1)
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                             }
                             else if (x == 0)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace == 0)
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                             }
@@ -292,42 +400,77 @@ namespace Casino_Ball_Drop_Game
 
                         if (counter < 1)
                         {
-                            gameBoard[rowCounter][3].Background = new SolidColorBrush(Colors.Yellow);
+                            ball.VerticalAlignment = VerticalAlignment.Top;
+                            ball.HorizontalAlignment = HorizontalAlignment.Left;
+                            ball.Width = 20;
+                            ball.Height = 20;
+                            ball.Fill = new SolidColorBrush(Colors.Black);
+                            gameBoard[rowCounter][3].Content = ball;
+                            gameBoard[rowCounter][3].VerticalContentAlignment = VerticalAlignment.Center;
+                            gameBoard[rowCounter][3].HorizontalContentAlignment = HorizontalAlignment.Center;
                             prevPlace = 3;
                         }
                         else
                         {
                             if (x == 1)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace >= gameBoard[0].Length - 1)
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                             }
                             else if (x == 0)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace == 0)
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                             }
@@ -351,25 +494,46 @@ namespace Casino_Ball_Drop_Game
 
                         if (counter < 1)
                         {
-                            gameBoard[rowCounter][4].Background = new SolidColorBrush(Colors.Yellow);
+                            ball.VerticalAlignment = VerticalAlignment.Top;
+                            ball.HorizontalAlignment = HorizontalAlignment.Left;
+                            ball.Width = 20;
+                            ball.Height = 20;
+                            ball.Fill = new SolidColorBrush(Colors.Black);
+                            gameBoard[rowCounter][4].Content = ball;
+                            gameBoard[rowCounter][4].VerticalContentAlignment = VerticalAlignment.Center;
+                            gameBoard[rowCounter][4].HorizontalContentAlignment = HorizontalAlignment.Center;
                             prevPlace = 4;
                         }
                         else
                         {
                             if (x == 1)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace >= gameBoard[0].Length - 1)
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
 
@@ -377,18 +541,32 @@ namespace Casino_Ball_Drop_Game
                             }
                             else if (x == 0)
                             {
-                                gameBoard[rowCounter - 1][prevPlace].Background = new SolidColorBrush(Colors.Transparent);
+                                gameBoard[rowCounter - 1][prevPlace].Content = "";
 
                                 if (prevPlace == 0)
                                 {
                                     newPlace = prevPlace + 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                                 else
                                 {
                                     newPlace = prevPlace - 1;
-                                    gameBoard[rowCounter][newPlace].Background = new SolidColorBrush(Colors.Yellow);
+                                    ball.VerticalAlignment = VerticalAlignment.Top;
+                                    ball.HorizontalAlignment = HorizontalAlignment.Left;
+                                    ball.Width = 20;
+                                    ball.Height = 20;
+                                    ball.Fill = new SolidColorBrush(Colors.Black);
+                                    gameBoard[rowCounter][newPlace].Content = ball;
+                                    gameBoard[rowCounter][newPlace].VerticalContentAlignment = VerticalAlignment.Center;
+                                    gameBoard[rowCounter][newPlace].HorizontalContentAlignment = HorizontalAlignment.Center;
                                     prevPlace = newPlace;
                                 }
                             }
@@ -396,12 +574,11 @@ namespace Casino_Ball_Drop_Game
                         counter++;
                         rowCounter++;
                     }
-                    
+  
                     break;
 
             }
 
-           
         }
     }
 }

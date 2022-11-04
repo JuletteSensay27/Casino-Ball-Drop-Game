@@ -14,3 +14,19 @@ C:\Users\JAPEQ-Family\Desktop\casinoBallDropGame\Casino-Ball-Drop-Game\Casino-Ba
 C:\Users\JAPEQ-Family\Desktop\casinoBallDropGame\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.csproj.CoreCompileInputs.cache
 C:\Users\JAPEQ-Family\Desktop\casinoBallDropGame\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.exe
 C:\Users\JAPEQ-Family\Desktop\casinoBallDropGame\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.pdb
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\bin\Debug\Casino-Ball-Drop-Game.exe.config
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\bin\Debug\Casino-Ball-Drop-Game.exe
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\bin\Debug\Casino-Ball-Drop-Game.pdb
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.csproj.AssemblyReference.cache
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.csproj.SuggestedBindingRedirects.cache
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\MainWindow.g.cs
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\App.g.cs
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game_MarkupCompile.cache
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game_MarkupCompile.lref
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\MainWindow.baml
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.g.resources
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino_Ball_Drop_Game.Properties.Resources.resources
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.csproj.GenerateResource.cache
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.csproj.CoreCompileInputs.cache
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.exe
+C:\Users\julet\Desktop\Workspace\c# Apps\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\Casino-Ball-Drop-Game\obj\Debug\Casino-Ball-Drop-Game.pdb
