@@ -683,6 +683,8 @@ namespace Casino_Ball_Drop_Game
                             foreach (Button btn in gameButton)
                                 btn.IsEnabled = true;
                             confirmWagerBtn.IsEnabled = false;
+                            playBal -= playWager;
+                            balanceLbl.Content = balanceLbl.Content.ToString().Split(':')[0] + ": " + playBal;
 
                             break;
                         case 1:
