@@ -30,6 +30,9 @@ namespace Casino_Ball_Drop_Game
             InitializeComponent();
             initBoard();
 
+            foreach(Button btn in gameButton)
+                btn.IsEnabled = false;
+            
             /*
              * For testing only
              */
@@ -688,10 +691,29 @@ namespace Casino_Ball_Drop_Game
                     MessageBox.Show("You cannot play with no bet!");
                 else
                 {
-                    var result = playWager > playBal ? MessageBox.Show("insufficient funds!") : MessageBox.Show("Carry on my way ward son!");
+
+                    int result = playWager > playBal ? 1 : 0;
+
+                    switch (result) 
+                    {
+                        case 0:
+                            MessageBox.Show("Play on!");
+                            foreach (Button btn in gameButton)
+                                btn.IsEnabled = true;
+                            confirmWagerBtn.IsEnabled = false;
+
+                            break;
+                        case 1:
+                            MessageBox.Show("Insufficient Funds");
+                            break;
+                    }
+
+
+                    
                 }
 
                 wagerTbx.Text = "0";
+              
             }
         }
     }
