@@ -636,5 +636,25 @@ namespace Casino_Ball_Drop_Game
             showPrizeMessage();
 
         }
+
+        private void addValueBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int toInc = int.Parse(wagerTbx.Text);
+            toInc++;
+            wagerTbx.Text = toInc.ToString();
+        }
+
+        private void subValueBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int toDec = int.Parse(wagerTbx.Text);
+
+            if (toDec <= 0)
+                wagerTbx.Text = "0";
+            else 
+            {
+                toDec--;
+                wagerTbx.Text = toDec.ToString();
+            }
+        }
     }
 }
