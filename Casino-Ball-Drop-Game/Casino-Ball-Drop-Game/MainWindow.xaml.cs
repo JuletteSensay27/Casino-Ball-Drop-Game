@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -28,6 +29,12 @@ namespace Casino_Ball_Drop_Game
         {
             InitializeComponent();
             initBoard();
+
+            /*
+             * For testing only
+             */
+
+            balanceLbl.Content += " 10000";
         }
 
         private void showPrizeMessage() 
@@ -654,6 +661,37 @@ namespace Casino_Ball_Drop_Game
             {
                 toDec--;
                 wagerTbx.Text = toDec.ToString();
+            }
+        }
+
+        private void confirmWagerBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string rawWager = wagerTbx.Text;
+            Regex pattern = new Regex(@"^[0-9]+$");
+
+            if (wagerTbx.Text.Length < 1)
+            {
+                wagerTbx.Text = "0";
+                wagerTbx.Select(wagerTbx.Text.Length, 0);
+            }
+
+            if (!pattern.IsMatch(rawWager))
+            {
+                MessageBox.Show("Invalid Amount!");
+            }
+            else
+            {
+                int playWager = int.Parse(rawWager);
+                int playBal = int.Parse(balanceLbl.Content.ToString().Split(':')[1]);
+
+                if (playWager == 0)
+                    MessageBox.Show("You cannot play with no bet!");
+                else
+                {
+                    var result = playWager > playBal ? MessageBox.Show("insufficient funds!") : MessageBox.Show("Carry on my way ward son!");
+                }
+
+                wagerTbx.Text = "0";
             }
         }
     }
