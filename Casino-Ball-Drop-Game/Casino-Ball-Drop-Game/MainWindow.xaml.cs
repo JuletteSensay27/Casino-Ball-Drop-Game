@@ -42,56 +42,38 @@ namespace Casino_Ball_Drop_Game
 
         private void showPrizeMessage() 
         {
-            if (gameBoard[6][0].Content != null) 
+            int winInd = 0;
+            for (int i = 0; i < gameBoard[6].Length; i++) 
             {
-              var confirm = MessageBox.Show("Winner! Slot 1", "", MessageBoxButton.OK);
-                if (confirm == MessageBoxResult.OK) 
+                if (gameBoard[6][i].Content != null) 
                 {
-                    gameBoard[6][0].Content = null;
-                    for (int i = 0; i < gameButton.Length; i++)
-                        gameButton[i].IsEnabled = true;
-                }
-            }                           
-            else if (gameBoard[6][1].Content != null)
-            {
-                var confirm = MessageBox.Show("Lost! Slot 2", "", MessageBoxButton.OK);
-                if (confirm == MessageBoxResult.OK)
-                {
-                    gameBoard[6][1].Content = null;
-                    for (int i = 0; i < gameButton.Length; i++)
-                        gameButton[i].IsEnabled = true;
+                    winInd = i;
+                    break;
                 }
             }
-            else if (gameBoard[6][2].Content != null)
+
+            switch (winInd) 
             {
-                var confirm = MessageBox.Show("Winner! Slot 3", "", MessageBoxButton.OK);
-                if (confirm == MessageBoxResult.OK)
-                {
-                    gameBoard[6][2].Content = null;
-                    for (int i = 0; i < gameButton.Length; i++)
-                        gameButton[i].IsEnabled = true;
-                }
+                case 0:
+                    MessageBox.Show("Slot 1!");
+                    break;
+                case 1:
+                    MessageBox.Show("Slot 2!");
+                    break;
+                case 2:
+                    MessageBox.Show("Slot 3!");
+                    break;
+                case 3:
+                    MessageBox.Show("Slot 4!");
+                    break;
+                case 4:
+                    MessageBox.Show("Slot 5!");
+                    break;
+                case 5:
+                    MessageBox.Show("Slot 6!");
+                    break;
             }
-            else if (gameBoard[6][3].Content != null)
-            {
-                var confirm = MessageBox.Show("Lost! Slot 4", "", MessageBoxButton.OK);
-                if (confirm == MessageBoxResult.OK)
-                {
-                    gameBoard[6][3].Content = null;
-                    for (int i = 0; i < gameButton.Length; i++)
-                        gameButton[i].IsEnabled = true;
-                }
-            }
-            else if (gameBoard[6][4].Content != null)
-            {
-                var confirm = MessageBox.Show("Winner! Slot 5", "", MessageBoxButton.OK);
-                if (confirm == MessageBoxResult.OK)
-                {
-                    gameBoard[6][4].Content = null;
-                    for (int i = 0; i < gameButton.Length; i++)
-                        gameButton[i].IsEnabled = true;
-                }
-            }
+
         }
 
         private void initBoard() 
@@ -707,11 +689,7 @@ namespace Casino_Ball_Drop_Game
                             MessageBox.Show("Insufficient Funds");
                             break;
                     }
-
-
-                    
                 }
-
                 wagerTbx.Text = "0";
               
             }
